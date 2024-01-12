@@ -10,13 +10,65 @@
         <script src="bootstrap-5.0.2/dist/js/bootstrap.bundle.min.js"></script>
 
         <style>
+        body {
+            background-color: #5F6F52;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        .h1_color_primary {
+            color: #A9B388;
+            font-size: 60px;
+        }
+        
+        .bg_color {
+            background-color: #A9B388;
+        }
+        
+        .custom-container {
+            width: 100%;
+            height: 100px;
+            margin: 0;
+            padding: 10px;
+            box-sizing: border-box;
+            background-color: #A9B388;
+        }
+        
         .bg-image {
-            background-image: url('https://sp-ao.shortpixel.ai/client/to_webp,q_glossy,ret_img/https://kronosexperience.com/wp-content/uploads/elementor/thumbs/Team-building-promotes-teamwork-which-fosters-success-in-a-business.-Here-is-how-and-why-you-should-be-implementing-team-building.-pgvjrn3l6aepzqdb0jid1n1acpw8kfhs3hnee6h7w0.jpeg');
-            height: 400px;
-            max-width: 200%;
+            background-image: url('img/5.jpg');
+            height: 600px;
+            max-width: 100%;
+            padding: 0;
             background-repeat: no-repeat;
-            background-attachment: fixed;
+            background-attachment: local;
             background-size: cover;
+            position: relative;
+            margin-bottom: 0;
+        }
+        
+        .reveal {
+            position: relative;
+            transform: translateY(150px);
+            opacity: 0;
+            transition: 400ms all ease;
+        }
+        
+        .reveal.active {
+            transform: translateY(0);
+            opacity: 1;
+        }
+        
+        .active.fade-bottom {
+            animation: fade-bottom 1ms ease-in;
+        }
+        
+        .active.fade-left {
+            animation: fade-left 1s ease-in;
+        }
+        
+        .active.fade-right {
+            animation: fade-right 1s ease-in;
         }
         
         .animated-text {
@@ -27,6 +79,39 @@
             font-size: 80px;
             color: #FEFAE0;
             animation: fadeFromBottom 2s;
+        }
+        
+        .square-transition {
+            opacity: 1;
+            transform: none;
+        }
+        
+        @media (prefers-reduced-motion: no-preference) {
+            .square {
+                transition: opacity 1.5s ease, transform 1.5s ease;
+            }
+        }
+        
+        @keyframes fade-left {
+            0% {
+                transform: translateX(-100px);
+                opacity: 0;
+            }
+            100% {
+                transform: translateX(0);
+                opacity: 1;
+            }
+        }
+        
+        @keyframes fade-right {
+            0% {
+                transform: translateX(100px);
+                opacity: 0;
+            }
+            100% {
+                transform: translateX(0);
+                opacity: 1;
+            }
         }
         
         @keyframes fadeFromBottom {
@@ -43,6 +128,7 @@
     </head>
 
     <body>
+
         <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
             <div class="container-fluid">
                 <a class="navbar-brand" href="#">Fixed top</a>
@@ -51,20 +137,90 @@
 
         <!-- HEADER IMAGE -->
         <div
-            class="bg-image position-relative p-5 text-center shadow-5-strong rounded mb-5 text-white">
+            class="bg-image position-relative p-5 text-center py-0 shadow-5-strong rounded text-white">
             <div class="mask position-absolute top-0 end-0 bottom-0 start-0 "
                 style="background-color: rgba(0, 0, 0, 0.6)">
                 <div
                     class="d-flex justify-content-center align-items-center h-200">
                     <div class="col-md-5 p-lg-5 mx-auto my-5">
-                        <p class="animated-text">Join us
-                        </p>
+                        <p class="animated-text">Join with us
+                        </br>
+                        <b>Agrona Tech</b>
+                    </p>
 
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="custom-container mt-0"></div>
+    <div class="pt-5 pb-5 mx-auto">
+        <h1 class="text-center reveal h1_color_primary "><b>Benefits of</b>
+        </h1>
+        <h1 class="text-center reveal h1_color_primary mb-5"><b>working with
+                Us</b>
+        </h1>
+        <div class="container">
+            <div class="row">
+                <!-- CARD 1 -->
+                <div class="col-lg-4 d-flex reveal align-items-stretch">
+                    <div class="card bg_color">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title"><b>Development</b></h5>
+                            <p class="card-text mb-4">Is a manmade waterway dug
+                                in the early 1600's and now displays many
+                                landmark commercial locals and vivid neon signs.
+                            </p>
+
+                        </div>
+                    </div>
+                </div>
+                <!-- CARD 2 -->
+                <div class="col-lg-4 d-flex reveal align-items-stretch">
+                    <div class="card">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title"><b>Development</b></h5>
+                            <p class="card-text mb-4">Is a manmade waterway dug
+                                in the early 1600's and now displays many
+                                landmark commercial locals and vivid neon signs.
+                            </p>
+
+                        </div>
+                    </div>
+                </div>
+                <!-- CARD 3 -->
+                <div class="col-lg-4 d-flex reveal align-items-stretch">
+                    <div class="card">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title"><b>Development</b></h5>
+                            <p class="card-text mb-4">Is a manmade waterway dug
+                                in the early 1600's and now displays many
+                                landmark commercial locals and vivid neon signs.
+                            </p>
+
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
+        <script>
+            window.addEventListener("scroll", reveal);
+            reveal();
 
+            function reveal() {
+                var reveals = document.querySelectorAll(".reveal");
+                for (var i = 0; i < reveals.length; i++) {
+                    var windowHeight = window.innerHeight;
+                    var elementTop = reveals[i].getBoundingClientRect().top;
+                    var elementVisible = 150;
+                    if (elementTop < windowHeight - elementVisible) {
+                        reveals[i].classList.add("active");
+                    } else {
+                        reveals[i].classList.remove("active");
+                    }
+                }
+            }
+        </script>
     </body>
 
 </html>
