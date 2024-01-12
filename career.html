@@ -8,6 +8,38 @@
             href="bootstrap-5.0.2/dist/css/bootstrap.min.css">
         <title>Document</title>
         <script src="bootstrap-5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+
+        <style>
+        .bg-image {
+            background-image: url('https://sp-ao.shortpixel.ai/client/to_webp,q_glossy,ret_img/https://kronosexperience.com/wp-content/uploads/elementor/thumbs/Team-building-promotes-teamwork-which-fosters-success-in-a-business.-Here-is-how-and-why-you-should-be-implementing-team-building.-pgvjrn3l6aepzqdb0jid1n1acpw8kfhs3hnee6h7w0.jpeg');
+            height: 400px;
+            max-width: 200%;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+        }
+        
+        .animated-text {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 80px;
+            color: #FEFAE0;
+            animation: fadeFromBottom 2s;
+        }
+        
+        @keyframes fadeFromBottom {
+            0% {
+                top: 100%;
+                opacity: 0;
+            }
+            100% {
+                top: 50%;
+                opacity: 1;
+            }
+        }
+    </style>
     </head>
 
     <body>
@@ -19,26 +51,18 @@
 
         <!-- HEADER IMAGE -->
         <div
-            class="bg-image position-relative p-5 text-center shadow-5-strong rounded mb-5 text-white"
-            style="
-    background-image: url('https://sp-ao.shortpixel.ai/client/to_webp,q_glossy,ret_img/https://kronosexperience.com/wp-content/uploads/elementor/thumbs/Team-building-promotes-teamwork-which-fosters-success-in-a-business.-Here-is-how-and-why-you-should-be-implementing-team-building.-pgvjrn3l6aepzqdb0jid1n1acpw8kfhs3hnee6h7w0.jpeg');
-    height: 500px; max-width: 200%;background-repeat: no-repeat; background-attachment: fixed;
-  background-size: cover;
-  ">
+            class="bg-image position-relative p-5 text-center shadow-5-strong rounded mb-5 text-white">
             <div class="mask position-absolute top-0 end-0 bottom-0 start-0 "
                 style="background-color: rgba(0, 0, 0, 0.6)">
                 <div
                     class="d-flex justify-content-center align-items-center h-200">
                     <div class="col-md-5 p-lg-5 mx-auto my-5">
-                        <p
-                            style="position: absolute;top: 50%;left: 50%;transform: translate(-50%, -50%); font-size: 80px; color: #FEFAE0;">Join
-                            us
+                        <p class="animated-text">Join us
                         </p>
 
                     </div>
                 </div>
             </div>
-
         </div>
 
     </body>
