@@ -1,6 +1,4 @@
-Thanks for downloading this theme!
+TUGAS UAS CLIENT SIDE Pak Fadhli Almuiini Ahda, S.Kom., M.Kom.
 
-Theme Name: eBusiness
-Theme URL: https://bootstrapmade.com/ebusiness-bootstrap-corporate-template/
-Author: BootstrapMade.com
-Author URL: https://bootstrapmade.com
+WAHYU HENDRIANSYAH - 22201152
+NAZILA RIZKA FAUZA - 22201013
