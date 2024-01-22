@@ -1,182 +1,1036 @@
-<!DOCTYPE html>
 <html lang="en">
-    <!-- index digunakan sbg halaman dashboard karena yang akan pertama kali muncul adalah index -->
 
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>AgronaTech</title>
-        <link rel="stylesheet"
-            href="bootstrap-5.0.2/dist/css/bootstrap.min.css">
-        <script src="bootstrap-5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+  <head>
+    <meta charset="utf-8">
+    <title>eBusiness Bootstrap Template</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content name="keywords">
+    <meta content name="description">
 
-        <style>
-        * {
-            font-family: montserrat;
-        }
-        
-        body {
-            background-color: #5F6F52;
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        
-        .text_primary {
-            color: #FEFAE0;
-            font-size: 30px;
-        }
-        
-        .text_secondary {
-            color: #FEFAE0;
-            font-size: 20px;
-        }
-        
-        .color-me {
-            color: #FEFAE0;
-        }
-        
-        .section-padding {
-            padding: 100px 0;
-        }
-        
-        .carousel-item {
-            height: 80vh;
-            min-height: 300px;
-        }
-        
-        .carousel-caption {
-            bottom: 220px;
-            z-index: 2;
-        }
-        
-        .carousel-caption h5 {
-            font-size: 45px;
-            text-transform: uppercase;
-            letter-spacing: 2px;
-            margin-top: 25px;
-        }
-        
-        .carousel-caption p {
-            width: 60%;
-            margin: auto;
-            font-size: 18px;
-            line-height: 1.9;
-        }
-        
-        .carousel-inner::before {
-            content: '';
-            position: absolute;
-            width: 100%;
-            height: 100%;
-            top: 0;
-            left: 0;
-            background: rgba(0, 0, 0, 0.7);
-            z-index: 1;
-        }
-    </style>
-    </head>
+    <link href="img/favicon.png" rel="icon">
+    <link href="img/apple-touch-icon.png" rel="apple-touch-icon">
 
-    <body>
-        <nav
-            class="navbar navbar-expand-lg fixed-top navbar-dark shadow-5-strong ps-4 pe-4">
-            <div class="container-fluid">
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,600,700|Raleway:300,400,400i,500,500i,700,800,900"
+      rel="stylesheet">
 
-                <a class="navbar-brand" href="#"><span
-                        class="text_primary">Agrona <i
-                            class="fa-solid fa-wheat"></i></span>Tech</a>
-                <button aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation"
-                    class="navbar-toggler"
-                    data-bs-target="#navbarSupportedContent"
-                    data-bs-toggle="collapse" type="button"><span
-                        class="navbar-toggler-icon"></span></button>
-                <div class="collapse navbar-collapse"
-                    id="navbarSupportedContent">
-                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                        <li class="nav-item color-me">
-                            <a class="nav-link" href="#about"><span
-                                    class="text_secondary">About
-                                    Us</span></a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#team"><span
-                                    class="text_secondary">Our Team</span></a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#career"><span
-                                    class="text_secondary">Career
-                                </span></a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#service"><span
-                                    class="text_secondary">Service</span></a>
-                        </li>
-                    </ul>
+    <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
-                </div>
-            </div>
+    <link href="lib/nivo-slider/css/nivo-slider.css" rel="stylesheet">
+    <link href="lib/owlcarousel/owl.carousel.css" rel="stylesheet">
+    <link href="lib/owlcarousel/owl.transitions.css" rel="stylesheet">
+    <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/venobox/venobox.css" rel="stylesheet">
 
-        </nav>
+    <link href="css/nivo-slider-theme.css" rel="stylesheet">
 
-        <div id="carouselExampleCaptions" class="carousel slide mt-0">
-            <div class="carousel-indicators">
-                <button type="button" data-bs-target="#carouselExampleCaptions"
-                    data-bs-slide-to="0" class="active" aria-current="true"
-                    aria-label="Slide 1"></button>
-                <button type="button" data-bs-target="#carouselExampleCaptions"
-                    data-bs-slide-to="1" aria-label="Slide 2"></button>
-                <button type="button" data-bs-target="#carouselExampleCaptions"
-                    data-bs-slide-to="2" aria-label="Slide 3"></button>
-            </div>
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img alt="..." class="d-block w-100" src="img/a.jpeg">
-                    <div class="carousel-caption">
-                        <h5>Lorem ipsum dolor sit amet</h5>
-                        <p>Lorem ipsum dolor sit amettttt, consectetur
-                            adipisicing elit. Maxime, nulla, tempore. Deserunt
-                            excepturi quas vero.</p>
+    <link href="css/style.css" rel="stylesheet">
 
+    <link href="css/responsive.css" rel="stylesheet">
+
+  </head>
+
+  <body data-spy="scroll" data-target="#navbar-example">
+
+    <div id="preloader"></div>
+
+    <header>
+
+      <div id="sticker" class="header-area">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12 col-sm-12">
+
+              <nav class="navbar navbar-default">
+
+                <div class="navbar-header">
+
+                  <!-- DIGUNAKAN UNTUK MENYEMBUYIKAN NAVBAR KETIKA LAYAR MENGECIL -->
+                  <button type="button" class="navbar-toggle collapsed"
+                    data-toggle="collapse"
+                    data-target=".bs-example-navbar-collapse-1"
+                    aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                  </button>
+
+                  <a class="navbar-brand page-scroll sticky-logo"
+                    href="index.html">
+                    <div class="row">
+                      <div class="col-md-3">
+                        <img class="img-responsive" src="img/icon_utama.png" />
+                      </div>
                     </div>
-                </div>
-                <div class="carousel-item">
-                    <img alt="..." class="d-block w-100" src="img/b.jpeg">
-                    <div class="carousel-caption">
-                        <h5>Lorem ipsum dolor sit amet</h5>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing
-                            elit. Maxime, nulla, tempore. Deserunt excepturi
-                            quas vero.</p>
 
-                    </div>
+                  </a>
                 </div>
-                <div class="carousel-item">
-                    <img alt="..." class="d-block w-100" src="img/c.jpeg">
-                    <div class="carousel-caption">
-                        <h5>Lorem ipsum dolor sit amet</h5>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing
-                            elit. Maxime, nulla, tempore. Deserunt excepturi
-                            quas vero.</p>
 
-                    </div>
+                <div
+                  class="collapse navbar-collapse main-menu bs-example-navbar-collapse-1"
+                  id="navbar-example">
+                  <ul class="nav navbar-nav navbar-right">
+                    <li class="active">
+                      <a class="page-scroll" href="#home">Beranda</a>
+                    </li>
+                    <li>
+                      <a class="page-scroll" href="#about">Tentang</a>
+                    </li>
+                    <li>
+                      <a class="page-scroll" href="#services">Layanan</a>
+                    </li>
+                    <li>
+                      <a class="page-scroll" href="#team">Team</a>
+                    </li>
+                    <li>
+                      <a class="page-scroll" href="#blog">Berita terbaru</a>
+                    </li>
+                    <li>
+                      <a class="page-scroll" href="#contact">Kontak</a>
+                    </li>
+                  </ul>
                 </div>
-                <button class="carousel-control-prev" type="button"
-                    data-bs-target="#carouselExampleCaptions"
-                    data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon"
-                        aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button"
-                    data-bs-target="#carouselExampleCaptions"
-                    data-bs-slide="next">
-                    <span class="carousel-control-next-icon"
-                        aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                </button>
+
+              </nav>
+
             </div>
+          </div>
+        </div>
+      </div>
+
+    </header>
+
+    <div id="home" class="slider-area">
+      <div class="bend niceties preview-2">
+        <div id="ensign-nivoslider" class="slides">
+          <img src="img/agrona_tech/farming.jpg" class="img-fluid" alt
+            title="#slider-direction-1" />
+          <img src="img/agrona_tech/perkebunan.jpg" alt
+            title="#slider-direction-2" />
+          <img src="img/agrona_tech/pak_tani.jpg" alt
+            title="#slider-direction-3" />
         </div>
 
-    </body>
+        <div id="slider-direction-1" class="slider-direction slider-one">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-12 col-sm-12 col-xs-12">
+                <div class="slider-content">
+
+                  <div class="layer-1-1 hidden-xs wow slideInDown"
+                    data-wow-duration="2s" data-wow-delay=".2s">
+                    <h2 class="title1">AGRONA TECH</h2>
+                  </div>
+
+                  <div class="layer-1-2 wow slideInUp" data-wow-duration="2s"
+                    data-wow-delay=".1s">
+                    <h1 class="title2">SIAP MEMBANTU KEBUTUHAN PERKEBUNAN ANDA
+                    </h1>
+                  </div>
+
+                  <div class="layer-1-3 hidden-xs wow slideInUp"
+                    data-wow-duration="2s" data-wow-delay=".2s">
+                    <a class="ready-btn right-btn page-scroll"
+                      href="#services">Lihat Layanan</a>
+                    <a class="ready-btn page-scroll" href="#about">Pelajari
+                      Lebih Lanjut</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div id="slider-direction-2" class="slider-direction slider-two">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-12 col-sm-12 col-xs-12">
+                <div class="slider-content text-center">
+
+                  <div class="layer-1-1 hidden-xs wow slideInUp"
+                    data-wow-duration="2s" data-wow-delay=".2s">
+                    <h2 class="title1">Layanan Perkebunan</h2>
+                  </div>
+
+                  <div class="layer-1-2 wow slideInUp" data-wow-duration="2s"
+                    data-wow-delay=".1s">
+                    <h1 class="title2">Layanan Kebun Profesional, Hasil Maksimal
+                    </h1>
+                  </div>
+
+                  <div class="layer-1-3 hidden-xs wow slideInUp"
+                    data-wow-duration="2s" data-wow-delay=".2s">
+                    <a class="ready-btn right-btn page-scroll"
+                      href="#services">Lihat Layanan</a>
+                    <a class="ready-btn page-scroll" href="#about">Pelajari
+                      Lebih Lanjut</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div id="slider-direction-3" class="slider-direction slider-two">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-12 col-sm-12 col-xs-12">
+                <div class="slider-content">
+
+                  <div class="layer-1-1 hidden-xs wow slideInUp"
+                    data-wow-duration="2s" data-wow-delay=".2s">
+                    <h2 class="title1">Jasa Perawatan Kebun</h2>
+                  </div>
+
+                  <div class="layer-1-2 wow slideInUp" data-wow-duration="2s"
+                    data-wow-delay=".1s">
+                    <h1 class="title2">Biarkan Kebun dan Ladang Anda Berkembang
+                      dengan Kami</h1>
+                  </div>
+
+                  <div class="layer-1-3 hidden-xs wow slideInUp"
+                    data-wow-duration="2s" data-wow-delay=".2s">
+                    <a class="ready-btn right-btn page-scroll"
+                      href="#services">Lihat Layanan</a>
+                    <a class="ready-btn page-scroll" href="#about">Pelajari
+                      Lebih Lanjut</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="about" class="about-area area-padding">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 col-sm-12 col-xs-12">
+            <div class="section-headline text-center">
+              <h2>Tentang AGRONA TECH</h2>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+
+          <div class="col-md-6 col-sm-6 col-xs-12">
+            <div class="well-left">
+              <div class="single-well">
+                <a href="#">
+                  <img src="img/about/1.jpg" alt>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-sm-6 col-xs-12">
+            <div class="well-middle">
+              <div class="single-well">
+                <a href="#">
+                  <h4 class="sec-head">Maintenance kebun sampai ladang</h4>
+                </a>
+                <p>
+                  Kami menawarkan jasa perawatan kebun yang berkualitas tinggi untuk memastikan kebun Anda tetap produktif.
+                  Dengan dedikasi penuh dan pengetahuan yang mendalam tentang tanaman, kami melakukan pemeliharaan rutin, pemangkasan, dan pemupukan optimal untuk memastikan pertumbuhan yang kuat.
+                </p>
+                <ul>
+                  <li>
+                    <i class="fa fa-check"></i> Konsultasi dan Perencanaan
+                  </li>
+                  <li>
+                    <i class="fa fa-check"></i> Pemupukan dan Tanah
+                  </li>
+                  <li>
+                    <i class="fa fa-check"></i> Pengendalian Hama dan Penyakit
+                  </li>
+                  <li>
+                    <i class="fa fa-check"></i> Pembersihan dan Pemeliharaan Area
+                  </li>
+                  <li>
+                    <i class="fa fa-check"></i> Pemeliharaan Pohon
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div id="services" class="services-area area-padding">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 col-sm-12 col-xs-12">
+            <div class="section-headline services-head text-center">
+              <h2>Layanan Kami</h2>
+            </div>
+          </div>
+        </div>
+        <div class="row text-center">
+          <div class="services-contents">
+
+            <div class="col-md-4 col-sm-4 col-xs-12">
+              <div class="about-move">
+                <div class="services-details">
+                  <div class="single-services">
+                    <a class="services-icon" href="#">
+                      
+                    </a>
+                    <h4>Konsultasi dan Perencanaan</h4>
+                    <p>
+                     Memberikan saran mengenai perawatan, penempatan, dan perencanaan lanjutan untuk meningkatkan keindahan dan produktivitas kebun.
+                    </p>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+            <div class="col-md-4 col-sm-4 col-xs-12">
+              <div class="about-move">
+                <div class="services-details">
+                  <div class="single-services">
+                    <a class="services-icon" href="#">
+                     
+                    </a>
+                    <h4>Pemupukan dan Tanah</h4>
+                    <p>
+                      Memberikan pemupukan yang sesuai dan perbaikan tanah untuk memastikan ketersediaan nutrisi dan struktur tanah yang baik.
+                    </p>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+            <div class="col-md-4 col-sm-4 col-xs-12">
+
+              <div class=" about-move">
+                <div class="services-details">
+                  <div class="single-services">
+                    <a class="services-icon" href="#">
+                     
+                    </a>
+                    <h4>Pengendalian Hama dan Penyakit</h4>
+                    <p>
+                     Menyediakan langkah-langkah pencegahan dan penanganan terhadap hama dan penyakit yang dapat merusak tanaman.
+                    </p>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+            <div class="col-md-4 col-sm-4 col-xs-12">
+
+              <div class=" about-move">
+                <div class="services-details">
+                  <div class="single-services">
+                    <a class="services-icon" href="#">
+                    
+                    </a>
+                    <h4>Pembersihan dan Pemeliharaan Area</h4>
+                    <p>
+                      Membersihkan daerah kebun dari dedaunan mati, sampah, dan memastikan area sekitar tetap teratur dan bersih.
+                    </p>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+            <div class="col-md-4 col-sm-4 col-xs-12">
+
+              <div class=" about-move">
+                <div class="services-details">
+                  <div class="single-services">
+                    <a class="services-icon" href="#">
+                     
+                    </a>
+                    <h4>Pemeliharaan Pohon</h4>
+                    <p>
+                      Melibatkan pemangkasan, penanganan penyakit, dan pemupukan untuk memastikan kesehatan dan keamanan pohon.
+                    </p>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+            <div class="col-md-4 col-sm-4 col-xs-12">
+
+              <div class=" about-move">
+                <div class="services-details">
+                  <div class="single-services">
+                    <a class="services-icon" href="#">
+                     
+                    </a>
+                    <h4>Support 24/7</h4>
+                    <p>
+                       Jaminan kami tidak hanya menyediakan produk berkualitas tinggi, tetapi juga dengan dukungan yang ramah dan responsif
+                    </p>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="our-skill-area fix hidden-sm">
+      <div class="test-overly"></div>
+      <div class="skill-bg area-padding-2">
+        <div class="container">
+
+          <div class="row">
+            <div class="skill-text">
+
+              <div class="col-xs-12 col-sm-3 col-md-3 text-center">
+                <div class="single-skill">
+                  <div class="progress-circular">
+                    <input type="text" class="knob" value="0" data-rel="95"
+                      data-linecap="round" data-width="175" data-bgcolor="#fff"
+                      data-fgcolor="#3EC1D5" data-thickness=".20"
+                      data-readonly="true" disabled>
+                    <h3 class="progress-h4">Pembersihan dan Pemeliharaan Area</h3>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-xs-12 col-sm-3 col-md-3 text-center">
+                <div class="single-skill">
+                  <div class="progress-circular">
+                    <input type="text" class="knob" value="0" data-rel="85"
+                      data-linecap="round" data-width="175" data-bgcolor="#fff"
+                      data-fgcolor="#3EC1D5" data-thickness=".20"
+                      data-readonly="true" disabled>
+                    <h3 class="progress-h4">Pemupukan dan Tanah</h3>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-xs-12 col-sm-3 col-md-3 text-center">
+                <div class="single-skill">
+                  <div class="progress-circular">
+                    <input type="text" class="knob" value="0" data-rel="75"
+                      data-linecap="round" data-width="175" data-bgcolor="#fff"
+                      data-fgcolor="#3EC1D5" data-thickness=".20"
+                      data-readonly="true" disabled>
+                    <h3 class="progress-h4">Konsultasi dan Perencanaan</h3>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-xs-12 col-sm-3 col-md-3 text-center">
+                <div class="single-skill">
+                  <div class="progress-circular">
+                    <input type="text" class="knob" value="0" data-rel="65"
+                      data-linecap="round" data-width="175" data-bgcolor="#fff"
+                      data-fgcolor="#3EC1D5" data-thickness=".20"
+                      data-readonly="true" disabled>
+                    <h3 class="progress-h4">Pemeliharaan Pohon</h3>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="team" class="our-team-area area-padding">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 col-sm-12 col-xs-12">
+            <div class="section-headline text-center">
+              <h2>Team Kami</h2>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="team-top">
+            <div class="col-md-3 col-sm-3 col-xs-12">
+              <div class="single-team-member">
+                <div class="team-img">
+                  <a href="#">
+                    <img src="img/team/wahyu.jpeg" alt>
+                  </a>
+                  <div class="team-social-icon text-center">
+                    <ul>
+                      <li>
+                        <a href="#">
+                          <i class="fa fa-facebook"></i>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">
+                          <i class="fa fa-twitter"></i>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">
+                          <i class="fa fa-instagram"></i>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="team-content text-center">
+                  <h4>Wahyu Hendriansyah</h4>
+                  <p>Ahli Pupuk - 22201152</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-3 col-sm-3 col-xs-12">
+              <div class="single-team-member">
+                <div class="team-img">
+                  <a href="#">
+                    <img src="img/team/2.jpg" alt>
+                  </a>
+                  <div class="team-social-icon text-center">
+                    <ul>
+                      <li>
+                        <a href="#">
+                          <i class="fa fa-facebook"></i>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">
+                          <i class="fa fa-twitter"></i>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">
+                          <i class="fa fa-instagram"></i>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="team-content text-center">
+                  <h4>Thonuo Tsu Thonuo</h4>
+                  <p>Ahli Pohon - 22201152</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-3 col-sm-3 col-xs-12">
+              <div class="single-team-member">
+                <div class="team-img">
+                  <a href="#">
+                    <img src="img/team/3.jpg" alt>
+                  </a>
+                  <div class="team-social-icon text-center">
+                    <ul>
+                      <li>
+                        <a href="#">
+                          <i class="fa fa-facebook"></i>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">
+                          <i class="fa fa-twitter"></i>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">
+                          <i class="fa fa-instagram"></i>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="team-content text-center">
+                  <h4>Lyennda Ri Lyennda</h4>
+                  <p>Ahli Pembersihan Lahan - 22201013</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-3 col-sm-3 col-xs-12">
+              <div class="single-team-member">
+                <div class="team-img">
+                  <a href="#">
+                    <img src="img/team/nazila.jpeg" alt>
+                  </a>
+                  <div class="team-social-icon text-center">
+                    <ul>
+                      <li>
+                        <a href="#">
+                          <i class="fa fa-facebook"></i>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">
+                          <i class="fa fa-twitter"></i>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">
+                          <i class="fa fa-instagram"></i>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="team-content text-center">
+                  <h4>Nazila Rizka Fauza</h4>
+                  <p>Konsultan Perkebunan - 22201013</p>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="reviews-area hidden-xs">
+      <div class="work-us">
+        <div class="work-left-text">
+          <a href="#">
+            <img src="img/agrona_tech/sawah.jpg" alt>
+          </a>
+        </div>
+        <div class="work-right-text text-center">
+          <h2>Bekerja dengan kami</h2>
+          <h5>jasa perawatan kebun yang berkualitas tinggi untuk memastikan kebun Anda tetap produktif
+          </h5>
+          <a href="#contact" class="ready-btn">Kontak Kami</a>
+        </div>
+      </div>
+    </div>
+
+    <div id="pricing" class="pricing-area area-padding">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 col-sm-12 col-xs-12">
+            <div class="section-headline text-center">
+              <h2>Table Harga</h2>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-4 col-sm-4 col-xs-12">
+            <div class="pri_table_list">
+              <h3>Pemupukan <br /> <span>Harga sesuai jenis tanaman, luas area, jenis pupuk, dan lokasi geografis.</span></h3>
+              <ol>
+                <li class="check">Pemilihan Pupuk yang Tepat</li>
+                <li class="check">Pemupukan Kustom</li>
+                <li class="check">Pemupukan Berkala</li>
+                <li class="check">Pemupukan Daerah Tertentu</li>
+                <li class="check">Pemupukan Cair</li>
+                <li class="check">Pemantauan Kondisi Tanaman</li>
+                <li class="check">Pemberian Laporan</li>
+                <li class="check">Pemupukan Organik</li>
+              </ol>
+              <button href="#contact">Kontak Kami</button>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-4 col-xs-12">
+            <div class="pri_table_list active">
+              <span class="saleon">top sale</span>
+              <h3>Pembersihan dan Pemeliharaan Area<br /> <span>Harga sesuai luas area</span></h3>
+              <ol>
+                <li class="check">Pemotongan Rumput</li>
+                <li class="check">Pembersihan Gulma</li>
+                <li class="check">Pemangkasan Tanaman Hias</li>
+                <li class="check">Pembersihan Daun Kering</li>
+                <li class="check">Irigasi dan Perawatan Tanah</li>
+                <li class="check">Penyiraman Tanaman</li>
+                <li class="check">Perawatan Taman atau Lanskap</li>
+                <li class="check">Penataan Kembali Material</li>
+              </ol>
+              <button href="#contact">Kontak Kami</button>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-4 col-xs-12">
+            <div class="pri_table_list">
+              <h3>Konsultasi dan Perencanaan<br /> <span>Harga sesuai lokasi, dan kompleksitas proyek </span></h3>
+              <ol>
+                <li class="check">Perencanaan Lanskap</li>
+                <li class="check">Konsultasi Pertanian</li>
+                <li class="check">Perencanaan Kebun</li>
+                <li class="check">Penyusunan Rencana Irigasi</li>
+                <li class="check">Pemilihan Pupuk dan Nutrisi</li>
+                <li class="check">Konsultasi Pemeliharaan Hutan</li>
+                <li class="check">Rencana Pengelolaan Air</li>
+                <li class="check">Konsultasi Keberlanjutan Lingkungan</li>
+              </ol>
+              <button href="#contact">Kontak Kami</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="testimonials-area">
+      <div class="testi-inner area-padding">
+        <div class="testi-overly"></div>
+        <div class="container ">
+          <div class="row">
+            <div class="col-md-12 col-sm-12 col-xs-12">
+
+              <div class="testimonial-content text-center">
+                <a class="quate" href="#"><i class="fa fa-quote-right"></i></a>
+
+                <div class="testimonial-carousel">
+                  <div class="single-testi">
+                    <div class="testi-text">
+                      <p>
+                        Terima kasih kepada AGRONA TECH atas pelayanan perkebunan yang luar biasa.
+						<br>
+						Kebun saya sekarang lebih subur dan produktif berkat layanan profesional mereka
+                      </p>
+                      <h6>Pak Jarot - Alamat ini dipalsuken Kan buat UAS aja hehe</h6>
+                    </div>
+                  </div>
+
+                  <div class="single-testi">
+                    <div class="testi-text">
+                      <p>
+                        Saya sangat puas dengan layanan perkebunan dari AGRONA TECH
+						<br>Mereka tidak hanya memahami kebutuhan tanaman saya tetapi juga memberikan solusi yang efektif untuk mengatasi masalah hama dan penyakit
+                      </p>
+                      <h6>Pak Yanto - Palsu Alamatnya Namanya juga UAS kan hehe</h6>
+                    </div>
+                  </div>
+
+                  <div class="single-testi">
+                    <div class="testi-text">
+                      <p>
+                       Pelayanan perkebunan dari AGRONA TECH benar-benar mengubah kebun saya
+					   <br> Mereka memberikan perawatan yang cermat dan tepat waktu, memastikan tanaman saya mendapatkan nutrisi yang diperlukan
+                      </p>
+                      <h6>Mbak Sandra - Semua nama barusan palsu ya Namanya Juga UAS awokawok</h6>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="blog" class="blog-area">
+      <div class="blog-inner area-padding">
+        <div class="blog-overly"></div>
+        <div class="container ">
+          <div class="row">
+            <div class="col-md-12 col-sm-12 col-xs-12">
+              <div class="section-headline text-center">
+                <h2>Berita Terbaru</h2>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+
+            <div class="col-md-4 col-sm-4 col-xs-12">
+              <div class="single-blog">
+                <div class="single-blog-img">
+                  <a>
+                    <img src="img/agrona_tech/kebun_kol.jpg" alt>
+                  </a>
+                </div>
+                <div class="blog-meta">
+                  <span class="comments-type">
+                    <i class="fa fa-comment-o"></i>
+                    <a href="#">1K Komentar</a>
+                  </span>
+                  <span class="date-type">
+                    <i class="fa fa-calendar"></i>2023-03-05 / 09:10:16
+                  </span>
+                </div>
+                <div class="blog-text">
+                  <h4>
+                    <a >AGRONA TECH Mencapai Kesuksesan</a>
+                  </h4>
+                  <p>
+                   Dalam beberapa bulan terakhir, AGRONA TECH, penyedia layanan perkebunan terkemuka, telah mencapai kesuksesan luar biasa dalam meningkatkan hasil pertanian di wilayah ini
+                  </p>
+                </div>
+              </div>
+
+            </div>
+
+            <div class="col-md-4 col-sm-4 col-xs-12">
+              <div class="single-blog">
+                <div class="single-blog-img">
+                  <a>
+                    <img src="img/agrona_tech/hasil_kebun1.jpg" alt>
+                  </a>
+                </div>
+                <div class="blog-meta">
+                  <span class="comments-type">
+                    <i class="fa fa-comment-o"></i>
+                    <a href="#">20K Komentar</a>
+                  </span>
+                  <span class="date-type">
+                    <i class="fa fa-calendar"></i>2023-03-05  / 09:10:16
+                  </span>
+                </div>
+                <div class="blog-text">
+                  <h4>
+                    <a>AGRONA TECH Transformasi Positif pada Pertanian Lokal</a>
+                  </h4>
+                  <p>
+                   AGRONA TECH, yang telah lama dikenal sebagai pionir dalam pelayanan perkebunan, mencapai tonggak sejarah baru dengan membawa transformasi positif pada pertanian lokal. Dengan fokus pada inovasi dan pendekatan holistik terhadap pemupukan, perusahaan ini berhasil menciptakan cerita keberhasilan.
+                  </p>
+                </div>
+              </div>
+
+            </div>
+
+            <div class="col-md-4 col-sm-4 col-xs-12">
+              <div class="single-blog">
+                <div class="single-blog-img">
+                  <a>
+                    <img src="img/agrona_tech/kebun_bunga.jpg" alt>
+                  </a>
+                </div>
+                <div class="blog-meta">
+                  <span class="comments-type">
+                    <i class="fa fa-comment-o"></i>
+                    <a href="#">136k comments</a>
+                  </span>
+                  <span class="date-type">
+                    <i class="fa fa-calendar"></i>2023-03-05  / 09:10:16
+                  </span>
+                </div>
+                <div class="blog-text">
+                  <h4>
+                    <a>Kisah Sukses AGRONA TECH Menyelamatkan Tanaman dan Meningkatkan Penghasilan Petani</a>
+                  </h4>
+                  <p>
+                      AGRONA TECH berhasil menyelamatkan tanaman petani lokal dan mendongkrak pendapatan mereka melalui pelayanan perkebunan yang terdepan. Berkat pendekatan yang inovatif dan penuh perhatian, perusahaan ini telah menciptakan dampak positif yang dapat dirasakan oleh komunitas pertanian setempat.
+                  </p>
+                </div>
+                <span>
+                </span>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="suscribe-area">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 col-md-12 col-sm-12 col-xs=12">
+            <div class="suscribe-text text-center">
+              <h3>SELAMAT DATANG DI AGRONA TECH</h3>
+              <a class="sus-btn" href="#">Lihat Selebihnya</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="contact" class="contact-area">
+      <div class="contact-inner area-padding">
+        <div class="contact-overly"></div>
+        <div class="container ">
+          <div class="row">
+            <div class="col-md-12 col-sm-12 col-xs-12">
+              <div class="section-headline text-center">
+                <h2>Kontak Kami</h2>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+
+            <div class="col-md-4 col-sm-4 col-xs-12">
+              <div class="contact-icon text-center">
+                <div class="single-icon">
+                  <i class="fa fa-mobile"></i>
+                  <p>
+                    +620129310982 - Nomor Palsu Buat UAS aja hehe<br>
+                    <span>Senin-Jumat (7:30 - 16:30)</span>
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4 col-sm-4 col-xs-12">
+              <div class="contact-icon text-center">
+                <div class="single-icon">
+                  <i class="fa fa-envelope-o"></i>
+                  <p>
+                    Email: agronawkwktech@example.com<br>
+                    <span>Web: www.angronawkwktech.com</span>
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4 col-sm-4 col-xs-12">
+              <div class="contact-icon text-center">
+                <div class="single-icon">
+                  <i class="fa fa-map-marker"></i>
+                  <p>
+                    Jl. Jalanin aja biar seneng<br>
+                    <span>65064, Malang</span>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+
+            <div class="col-md-6 col-sm-6 col-xs-12">
+
+              <iframe
+                src="https://maps.google.com/maps?q=malang&t=&z=10&ie=UTF8&iwloc=&output=embed"
+                width="100%" height="380" frameborder="0" style="border:0"
+                allowfullscreen></iframe>
+
+            </div>
+
+            <div class="col-md-6 col-sm-6 col-xs-12">
+              <div class="form contact-form">
+                <div id="sendmessage">Your message has been sent. Thank you!
+                </div>
+                <div id="errormessage"></div>
+                <form action method="post" role="form" class="contactForm">
+                  <div class="form-group">
+                    <input type="text" name="name" class="form-control"
+                      id="name" placeholder="Nama Anda" data-rule="minlen:4"
+                      data-msg="Please enter at least 4 chars" />
+                    <div class="validation"></div>
+                  </div>
+                  <div class="form-group">
+                    <input type="email" class="form-control" name="email"
+                      id="email" placeholder="Email" data-rule="email"
+                      data-msg="Please enter a valid email" />
+                    <div class="validation"></div>
+                  </div>
+                  <div class="form-group">
+                    <input type="text" class="form-control" name="subject"
+                      id="subject" placeholder="Subjek" data-rule="minlen:4"
+                      data-msg="Please enter at least 8 chars of subject" />
+                    <div class="validation"></div>
+                  </div>
+                  <div class="form-group">
+                    <textarea class="form-control" name="message" rows="5"
+                      data-rule="required"
+                      data-msg="Please write something for us"
+                      placeholder="Pesan"></textarea>
+                    <div class="validation"></div>
+                  </div>
+                  <div class="text-center"><button type="submit">Kirim Pesan</button></div>
+                </form>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <div class="footer-area">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-4 col-sm-4 col-xs-12">
+              <div class="footer-content">
+                <div class="footer-head">
+                  <div class="footer-logo">
+                    <div class="row">
+                      <div class="col-md-3">
+                        <img class="img-responsive" src="img/icon_footer.png" />
+                      </div>
+                    </div>
+                  </div>
+
+                  <p>menciptakan masa depan pertanian yang berkelanjutan, produktif, dan berdaya saing tinggi</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4 col-sm-4 col-xs-12">
+              <div class="footer-content">
+                <div class="footer-head">
+                  <h4>information</h4>
+                  <p>
+                    Kami menjunjung tinggi prinsip keberlanjutan lingkungan. Dalam setiap langkah, kami berusaha untuk meminimalkan dampak negatif pada lingkungan, mempromosikan praktik pertanian yang ramah lingkungan, dan mendukung peralihan menuju pertanian berkelanjutan.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4 col-sm-4 col-xs-12">
+              <div class="footer-content">
+                <div class="footer-head">
+                  <h4>Instagram</h4>
+                  <div class="flicker-img">
+                    <a href="#"><img src="img/portfolio/1.jpg" alt></a>
+                    <a href="#"><img src="img/portfolio/2.jpg" alt></a>
+                    <a href="#"><img src="img/portfolio/3.jpg" alt></a>
+                    <a href="#"><img src="img/portfolio/4.jpg" alt></a>
+                    <a href="#"><img src="img/portfolio/5.jpg" alt></a>
+                    <a href="#"><img src="img/portfolio/6.jpg" alt></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-area-bottom">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12 col-sm-12 col-xs-12">
+              <div class="copyright text-center">
+                <p>
+                  &copy; Copyright <strong>eBusiness</strong>. All Rights
+                  Reserved
+                </p>
+              </div>
+              <div class="credits">
+
+                All the links in the footer should remain intact. You can delete
+                the links only if you purchased the pro version. Licensing
+                information: https://bootstrapmade.com/license/ Purchase the pro
+                version with working PHP/AJAX contact form:
+                https://bootstrapmade.com/buy/?theme=eBusiness
+                --> Designed by <a
+                  href="https://bootstrapmade.com/">BootstrapMade</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+
+    <script src="lib/jquery/jquery.min.js"></script>
+    <script src="lib/bootstrap/js/bootstrap.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/venobox/venobox.min.js"></script>
+    <script src="lib/knob/jquery.knob.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/parallax/parallax.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/nivo-slider/js/jquery.nivo.slider.js"
+      type="text/javascript"></script>
+    <script src="lib/appear/jquery.appear.js"></script>
+    <script src="lib/isotope/isotope.pkgd.min.js"></script>
+
+    <script src="contactform/contactform.js"></script>
+
+    <script src="js/main.js"></script>
+  </body>
 
 </html>
